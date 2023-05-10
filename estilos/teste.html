@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tela de Login</title>
+<style>
+    body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      
+      .container {
+        display: flex;
+        width: 90%;
+        height: 80%;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        border-radius: 8px;
+      }
+      
+      .form {
+        width: 50%;
+        padding: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .form input[type="text"], 
+      .form input[type="password"] {
+        width: 100%;
+        margin-bottom: 24px;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        background-color: #f2f2f2;
+      }
+      
+      .form input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 12px;
+        cursor: pointer;
+      }
+      
+      .form input[type="checkbox"] {
+        margin-top: 12px;
+        margin-right: 8px;
+      }
+      
+      .social-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+      
+.social-login button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  height: 40px;
+  margin-right: 10px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+      
+      .social-login button.facebook {
+        background-color: #3b5998;
+        color: #fff;
+      }
+      
+      .social-login button.google {
+        background-color: #dd4b39;
+        color: #fff;
+      }
+      
+      .social-login button.icloud {
+        background-color: #747474;
+        color: #fff;
+      }
+      
+      .image {
+        width: 50%;
+        height: 100%;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-image: url(../imagens/login.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .facebook img {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.google img {
+  width: 28px;
+  margin-right: 20px;
+}
+
+.icloud img {
+  width: 26px;
+  margin-right: 18px;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image"></div>
+        <form class="form" action="#" method="post">
+            <h2>Login</h2>
+            <input type="text" name="username" placeholder="Nome de usuário">
+            <input type="password" name="password" placeholder="Senha">
+            <div>
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Lembrar login</label>
+            </div>
+            <input type="submit" value="Entrar">
+            <p>Fazer login com:</p>
+            <div class="social-login">
+                <button class="facebook">
+                    <img src="../imagens/facebook-icon.png" alt="Entrar com Facebook">
+                    Entrar com Facebook
+                </button>
+                <button class="google">
+                    <img src="../imagens/google-icon.png" alt="Entrar com Google">
+                    Entrar com Google
+                </button>
+                <button class="icloud">
+                    <img src="../imagens/apple-icon.png" alt="Entrar com iCloud">
+                    Entrar com iCloud
+                </button>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
