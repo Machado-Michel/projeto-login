@@ -21,10 +21,11 @@
         height: 80%;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
         background-color: #fff;
-        border-radius: 8px;
+        border-radius: 20px;
       }
       
-      .form {
+  .form {
+        overflow-x: hidden;
         width: 50%;
         padding: 48px;
         display: flex;
@@ -33,9 +34,9 @@
         justify-content: center;
       }
       
-      .form input[type="text"], 
-      .form input[type="password"] {
-        width: 100%;
+  .form input[type="text"], 
+  .form input[type="password"] {
+        width: 70%;
         margin-bottom: 24px;
         padding: 12px;
         border: none;
@@ -43,7 +44,8 @@
         background-color: #f2f2f2;
       }
       
-      .form input[type="submit"] {
+  .form input[type="submit"] {
+        margin-top: 2vh;
         background-color: #4CAF50;
         color: #fff;
         border: none;
@@ -52,12 +54,12 @@
         cursor: pointer;
       }
       
-      .form input[type="checkbox"] {
+  .form input[type="checkbox"] {
         margin-top: 12px;
         margin-right: 8px;
       }
       
-      .social-login {
+  .social-login {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,11 +67,12 @@
 }
       
 .social-login button {
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
-  border-radius: 4px;
+  border-radius: 50px;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
@@ -103,6 +106,7 @@
         background-image: url(../imagens/login.jpg);
         background-size: cover;
         background-position: center;
+        border-radius: 20px 0px 0px 20px;
       }
 
       .facebook img {
@@ -118,6 +122,10 @@
 .icloud img {
   width: 26px;
   margin-right: 18px;
+}
+
+form > p {
+  font-weight: bolder;
 }
 
 </style>
