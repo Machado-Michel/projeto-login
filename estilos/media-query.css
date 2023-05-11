@@ -8,6 +8,7 @@
 
     section#login {
         width: 80vw;
+        height: 290px;
     }
 
     section#login > div#imagem {
@@ -22,6 +23,10 @@ section#login > div#formulario {
     height: 100%;
     }
 
+    div.campo > input {
+    width: calc(100% - 45px);
+    }
+
 }
 
 
@@ -32,6 +37,7 @@ section#login > div#formulario {
 
     section#login {
         width: 950px;
+        height: 380px;
     }
 
     section#login > div#imagem {
@@ -50,6 +56,11 @@ section#login > div#formulario {
     }
 
     div#formulario > p {
-            font-size: 1.3em;
+            font-size: 1.2em;
+            margin: 20px 0px;
+    }
+    
+    div.campo > input[type=password], input[type=email] {
+        width: 90%;
     }
 }
